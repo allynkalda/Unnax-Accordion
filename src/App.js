@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1>Playlists</h1>
-        { data.map((info) => <Accordion data={info} />)}
+        { data.map((info, index) => <Accordion data={info} key={index} />)}
     </div>
   );
 }
